@@ -1,0 +1,117 @@
+body{
+  background-color:black;
+  color:#FFF;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#modBg{
+  z-index: 1;
+    background-image:
+      linear-gradient(45deg, #000 25%, transparent 25%, transparent 75%, #000 75%),
+      linear-gradient(135deg, #000 25%, #AF0707 25%, #AF0707 75%, #000 75%);
+    background-size: 50px 50px;
+    background-position:
+      0 0,
+      50px/2 50px/2;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+}
+#mod{
+  z-index: 2;
+  position: absolute;
+  width: 40vw;
+  height: 50vh;
+  border: #AF0707 4px solid;
+  background: black;
+  text-align: center; 
+  left: 30vw;
+  top: 15vh;
+}
+.startAni{
+  animation-name: wipe;
+  animation-duration: 3s;
+  /* -moz-animation: wipe 6s steps(6 0, end);
+  -webkit-animation: wipe 6s steps(6 0, end); */
+}
+
+#scoreboard{
+  height:100px; 
+  width: 50vw; 
+  background: black; 
+  color: #AF0707;
+  margin: 1vh 1vw;
+  font-size: 1.5em
+}
+
+#scoreboard button, #rollBtn, #startGame{
+  background:black;
+  border: #AF0707 2px solid;
+  color: #AF0707;
+}
+a, a:active, a:hover{
+  color: #AF0707;
+}
+text{
+  fill:#39FF14;
+  font-size: 30px;
+}
+
+#resetRound{
+  display: none;
+}
+
+.rect{
+  fill: black;
+  stroke-width: 10;
+  stroke: #AF0707;
+}
+
+#chickenDinner{
+  position: absolute;
+  z-index: 1;
+  height: 300px;
+  width: auto;
+  display:none;
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 4000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 4000ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 4000ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  
+  animation-name: spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+}
+
+@-moz-keyframes spin {
+  from { -moz-transform: rotate(0deg); }
+  to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+}
+
+@-moz-keyframes wipe {
+  to {width: 0;}
+}
+@-webkit-keyframes wipe {
+  to {width: 0;}
+}
+@keyframes wipe {
+  to {width: 0;}
+}
