@@ -1,4 +1,10 @@
-A game of klackers made with vanilla js.
-Kracker a beer, get some dollar bills, and get ready to klack!
+# Klackers
 
-Learn more at Klackers.com
+made with vanilla js!
+
+## Demo
+
+https://codepen.io/moegain/pen/dQvYpa
+
+
+To learn more about the game of Klackers, visit https://klackers.com/
